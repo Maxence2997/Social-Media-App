@@ -9,8 +9,8 @@ class SignUpViewModel : ViewModel() {
   var uiState by mutableStateOf(SignUpState())
     private set
 
-  fun updateUserName(userName: String) {
-    uiState = uiState.copy(userName = userName)
+  fun updateUsername(username: String) {
+    uiState = uiState.copy(username = username)
   }
 
   fun updateEmail(email: String) {
@@ -23,7 +23,7 @@ class SignUpViewModel : ViewModel() {
 }
 
 data class SignUpState(
-  val userName: String = "",
+  val username: String = "",
   val email: String = "",
   val password: String = "",
 )

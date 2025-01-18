@@ -58,7 +58,7 @@ fun SignUpScreen(
   ) {
     CustomTextField(
       modifier = Modifier.fillMaxSize(),
-      value = uiState.userName,
+      value = uiState.username,
       onValueChange = onUserNameChange,
       hint = R.string.username_hint
     )
