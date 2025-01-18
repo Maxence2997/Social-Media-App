@@ -24,23 +24,23 @@ val White36 = Color(0xFFE5E5E5)
 val White76 = Color(0xFFF5F5F5)
 
 internal val LightColors = lightColorScheme(
-    primary = Blue,
-    onPrimary = White, // 新增對比顏色
-    primaryContainer = Blue.copy(alpha = 0.8f), // 替代 primaryVariant
-    onPrimaryContainer = Black, // 容器文字對比色
-    background = White76,
-    onBackground = Black87,
-    surface = White,
-    onSurface = Black87
+  primary = Blue,
+  onPrimary = White, // 新增對比顏色
+  primaryContainer = Blue.copy(alpha = 0.8f), // 替代 primaryVariant
+  onPrimaryContainer = Black, // 容器文字對比色
+  background = White76,
+  onBackground = Black87,
+  surface = White,
+  onSurface = Black87
 )
 
 internal val DarkColors = darkColorScheme(
-    primary = Blue,
-    onPrimary = Black, // 新增對比顏色
-    primaryContainer = Blue.copy(alpha = 0.8f), // 替代 primaryVariant
-    onPrimaryContainer = White, // 容器文字對比色
-    background = Black87,
-    onBackground = White87,
-    surface = Black24,
-    onSurface = White87
+  primary = Blue,
+  onPrimary = Black, // 新增對比顏色
+  primaryContainer = Blue.copy(alpha = 0.8f), // 替代 primaryVariant
+  onPrimaryContainer = White, // 容器文字對比色
+  background = Black87,
+  onBackground = White87,
+  surface = Black24,
+  onSurface = White87
 )
