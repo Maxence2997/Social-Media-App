@@ -1,4 +1,4 @@
-package idv.maxence2997.socialapp.android.auth.signup
+package idv.maxence2997.socialmediaapp.android.auth.signup
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

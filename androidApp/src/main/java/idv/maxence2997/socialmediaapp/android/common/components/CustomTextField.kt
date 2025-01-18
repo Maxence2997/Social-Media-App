@@ -1,4 +1,4 @@
-package idv.maxence2997.socialapp.android.common.components
+package idv.maxence2997.socialmediaapp.android.common.components
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -22,9 +22,9 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
-import idv.maxence2997.socialapp.android.R
-import idv.maxence2997.socialapp.android.common.theming.Gray
-import idv.maxence2997.socialapp.android.common.theming.SocialAppTheme
+import idv.maxence2997.socialmediaapp.android.R
+import idv.maxence2997.socialmediaapp.android.common.theming.Gray
+import idv.maxence2997.socialmediaapp.android.common.theming.SocialAppTheme
 
 @Composable
 fun CustomTextField(

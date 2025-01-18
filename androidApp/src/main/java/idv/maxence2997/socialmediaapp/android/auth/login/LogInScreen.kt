@@ -1,4 +1,4 @@
-package idv.maxence2997.socialapp.android.auth.signup
+package idv.maxence2997.socialmediaapp.android.auth.login
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -20,19 +20,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import idv.maxence2997.socialapp.android.R
-import idv.maxence2997.socialapp.android.common.components.CustomTextField
-import idv.maxence2997.socialapp.android.common.theming.ButtonHeight
-import idv.maxence2997.socialapp.android.common.theming.ExtraLargeSpacing
-import idv.maxence2997.socialapp.android.common.theming.LargeSpacing
-import idv.maxence2997.socialapp.android.common.theming.MediumSpacing
-import idv.maxence2997.socialapp.android.common.theming.SocialAppTheme
+import idv.maxence2997.socialmediaapp.android.R
+import idv.maxence2997.socialmediaapp.android.common.components.CustomTextField
+import idv.maxence2997.socialmediaapp.android.common.theming.ButtonHeight
+import idv.maxence2997.socialmediaapp.android.common.theming.ExtraLargeSpacing
+import idv.maxence2997.socialmediaapp.android.common.theming.LargeSpacing
+import idv.maxence2997.socialmediaapp.android.common.theming.MediumSpacing
+import idv.maxence2997.socialmediaapp.android.common.theming.SocialAppTheme
 
 @Composable
-fun SignUpScreen(
+fun LogInScreen(
   modifier: Modifier = Modifier,
-  uiState: SignUpState,
-  onUserNameChange: (String) -> Unit,
+  uiState: LogInState,
   onEmailChange: (String) -> Unit,
   onPasswordChange: (String) -> Unit,
 ) {
@@ -56,13 +55,6 @@ fun SignUpScreen(
     horizontalAlignment = Alignment.CenterHorizontally,
     verticalArrangement = Arrangement.spacedBy(LargeSpacing)
   ) {
-    CustomTextField(
-      modifier = Modifier.fillMaxSize(),
-      value = uiState.username,
-      onValueChange = onUserNameChange,
-      hint = R.string.username_hint
-    )
-
     CustomTextField(
       modifier = Modifier.fillMaxSize(),
       value = uiState.email,
@@ -90,18 +82,17 @@ fun SignUpScreen(
       ),
       shape = MaterialTheme.shapes.medium,
     ) {
-      Text(text = stringResource(id = R.string.sign_up_button_hint))
+      Text(text = stringResource(id = R.string.log_in_button_hint))
     }
   }
 }
 
 @Preview
 @Composable
-private fun SignUpScreenPreview() {
+private fun LogInScreenPreview() {
   SocialAppTheme {
-    SignUpScreen(
-      uiState = SignUpState(),
-      onUserNameChange = {},
+    LogInScreen(
+      uiState = LogInState(),
       onPasswordChange = {},
       onEmailChange = {})
   }

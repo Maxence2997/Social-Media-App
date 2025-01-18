@@ -1,4 +1,4 @@
-package idv.maxence2997.socialapp
+package idv.maxence2997.socialmediaapp
 
 class Greeting {
     private val platform: Platform = getPlatform()

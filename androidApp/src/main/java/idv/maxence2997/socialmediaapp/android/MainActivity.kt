@@ -1,4 +1,4 @@
-package idv.maxence2997.socialapp.android
+package idv.maxence2997.socialmediaapp.android
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,8 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import idv.maxence2997.socialapp.Greeting
-import idv.maxence2997.socialapp.android.common.theming.SocialAppTheme
+import idv.maxence2997.socialmediaapp.Greeting
+import idv.maxence2997.socialmediaapp.android.common.theming.SocialAppTheme
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {

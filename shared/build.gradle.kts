@@ -40,7 +40,7 @@ kotlin {
 }
 
 android {
-  namespace = "idv.maxence2997.socialapp"
+  namespace = "idv.maxence2997.socialmediaapp"
   compileSdk = 35
   defaultConfig {
     minSdk = 24

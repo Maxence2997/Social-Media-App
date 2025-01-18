@@ -1,4 +1,4 @@
-package idv.maxence2997.socialapp.android.common.theming
+package idv.maxence2997.socialmediaapp.android.common.theming
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import idv.maxence2997.socialapp.android.R
+import idv.maxence2997.socialmediaapp.android.R
 
 val Lexend = FontFamily(
   Font(R.font.lexend_medium, FontWeight.Medium),

@@ -8,10 +8,10 @@ plugins {
 }
 
 android {
-  namespace = "idv.maxence2997.socialapp.android"
+  namespace = "idv.maxence2997.socialmediaapp.android"
   compileSdk = 35
   defaultConfig {
-    applicationId = "idv.maxence2997.socialapp.android"
+    applicationId = "idv.maxence2997.socialmediaapp.android"
     minSdk = 24
     targetSdk = 35
     versionCode = 1

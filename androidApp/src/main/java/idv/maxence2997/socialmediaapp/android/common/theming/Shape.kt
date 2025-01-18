@@ -1,8 +1,7 @@
-package idv.maxence2997.socialapp.android.common.theming
+package idv.maxence2997.socialmediaapp.android.common.theming
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes
-
 
 val Shapes = Shapes(
   small = RoundedCornerShape(SmallSpacing),
