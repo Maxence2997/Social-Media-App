@@ -24,7 +24,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import idv.maxence2997.socialmediaapp.android.R
 import idv.maxence2997.socialmediaapp.android.common.theming.Gray
-import idv.maxence2997.socialmediaapp.android.common.theming.SocialAppTheme
+import idv.maxence2997.socialmediaapp.android.common.theming.SocialMediaAppTheme
 
 @Composable
 fun CustomTextField(
@@ -36,7 +36,6 @@ fun CustomTextField(
   isSingleLine: Boolean = true,
   @StringRes hint: Int,
 ) {
-
   var isPasswordVisible by remember { mutableStateOf(false) }
 
   TextField(
@@ -95,7 +94,6 @@ fun CustomTextField(
 fun PasswordEyeIcon(
   isPasswordVisible: Boolean, onPasswordVisibilityToggle: () -> Unit,
 ) {
-
   val image = if (isPasswordVisible) {
     // 顯示密碼
     painterResource(R.drawable.show_eye_icon_filled)
@@ -114,11 +112,11 @@ fun PasswordEyeIcon(
 @Preview
 @Composable
 fun CustomTextFieldPreview() {
-  SocialAppTheme {
+  SocialMediaAppTheme {
     CustomTextField(
       value = "",
       onValueChange = {},
-      hint = androidx.compose.ui.R.string.default_error_message
+      hint = androidx.compose.ui.R.string.default_error_message,
     )
   }
 }

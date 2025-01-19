@@ -26,7 +26,7 @@ import idv.maxence2997.socialmediaapp.android.common.theming.ButtonHeight
 import idv.maxence2997.socialmediaapp.android.common.theming.ExtraLargeSpacing
 import idv.maxence2997.socialmediaapp.android.common.theming.LargeSpacing
 import idv.maxence2997.socialmediaapp.android.common.theming.MediumSpacing
-import idv.maxence2997.socialmediaapp.android.common.theming.SocialAppTheme
+import idv.maxence2997.socialmediaapp.android.common.theming.SocialMediaAppTheme
 
 @Composable
 fun LogInScreen(
@@ -90,7 +90,7 @@ fun LogInScreen(
 @Preview
 @Composable
 private fun LogInScreenPreview() {
-  SocialAppTheme {
+  SocialMediaAppTheme {
     LogInScreen(
       uiState = LogInState(),
       onPasswordChange = {},
