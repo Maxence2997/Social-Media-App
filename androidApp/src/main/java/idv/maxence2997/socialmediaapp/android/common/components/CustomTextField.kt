@@ -92,7 +92,8 @@ fun CustomTextField(
 
 @Composable
 fun PasswordEyeIcon(
-  isPasswordVisible: Boolean, onPasswordVisibilityToggle: () -> Unit,
+  isPasswordVisible: Boolean,
+  onPasswordVisibilityToggle: () -> Unit,
 ) {
   val image = if (isPasswordVisible) {
     // 顯示密碼
