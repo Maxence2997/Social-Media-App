@@ -7,10 +7,7 @@ import com.ramcosta.composedestinations.generated.NavGraphs
 
 @Composable
 fun SocialMediaApp() {
-  val navHostController = rememberNavController()
+    val navHostController = rememberNavController()
 
-
-
-
-  DestinationsNavHost(navGraph = NavGraphs.root, navController = navHostController)
+    DestinationsNavHost(navGraph = NavGraphs.root, navController = navHostController)
 }

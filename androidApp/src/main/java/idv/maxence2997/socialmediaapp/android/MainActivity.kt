@@ -6,38 +6,21 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import idv.maxence2997.socialmediaapp.Greeting
-import idv.maxence2997.socialmediaapp.android.common.theming.SocialAppTheme
+import idv.maxence2997.socialmediaapp.android.common.theming.SocialMediaAppTheme
 
 class MainActivity : ComponentActivity() {
-  override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContent {
-      SocialAppTheme {
-        Surface(
-          modifier = Modifier.fillMaxSize(),
-          color = MaterialTheme.colorScheme.background
-        ) {
-          GreetingView(Greeting().greet())
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            SocialMediaAppTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background,
+                ) {
+                    SocialMediaApp()
+                }
+            }
         }
-      }
     }
-  }
-}
-
-@Composable
-fun GreetingView(text: String) {
-  Text(text = text)
-}
-
-@Preview
-@Composable
-fun DefaultPreview() {
-  SocialAppTheme {
-    GreetingView("Hello, Android!")
-  }
 }

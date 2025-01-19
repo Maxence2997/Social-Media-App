@@ -4,6 +4,7 @@
     <application
             android:allowBackup="false"
             android:supportsRtl="true"
+            android:name=".SocialMediaApplication"
             android:theme="@style/AppTheme">
         <activity
                 android:name="idv.maxence2997.socialmediaapp.android.MainActivity"
